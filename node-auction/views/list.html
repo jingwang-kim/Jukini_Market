@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div class="timeline">
+    <h2 id="title">구매 목록</h2>
+    <table id="good-list">
+      <tr>
+        <th>상품명</th>
+        <th>사진</th>
+        <th>구매가</th>
+        <th>수량</th>
+      </tr>
+      {% for purchase in purchases %}
+        <tr>
+          <td>{{purchase.Good.name}}</td>
+          <td>
+            <img src="/img/{{purchase.Good.img}}">
+          </td>
+          <td>{{purchase.Good.price}}</td>
+          <td>{{purchase.bid}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+{% endblock %}
