@@ -6,7 +6,7 @@ It's a collaboration project with Yang Soo-bin.
 
 node-auction is main file
 
-# used
+# Used
 1. nodejs
 2. mysql
 3. bcrypt
